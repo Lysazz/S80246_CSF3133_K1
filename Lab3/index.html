@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+        }
+
+        .header {
+            background-color: #4a90a4;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .content {
+            width: 60%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .calculator {
+            margin-top: 25px;
+            padding: 15px;
+            background-color: #eaf4f6;
+            border-radius: 8px;
+        }
+
+        input, textarea {
+            margin: 8px 0;
+            padding: 8px;
+        }
+
+        button {
+            background-color: #4a90a4;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .footer {
+            background-color: #4a90a4;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <div class="header">
+        <h1>Contact Us</h1>
+        <span>We are happy to hear from you!</span>
+    </div>
+
+
+    <!-- Content Section -->
+    <div class="content">
+
+        <h2>Contact Form</h2>
+
+        <form onsubmit="alert('Your message has been submitted!'); return false;">
+
+            <label>Email:</label><br>
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <br><br>
+
+            <label>Preferred Contact Date:</label><br>
+            <input type="date" name="date" required>
+            <br><br>
+
+            <label>Satisfaction Level:</label><br>
+            <input type="range" name="satisfaction" min="0" max="100" value="50">
+            <br><br>
+
+            <label>Message:</label><br>
+            <textarea name="message" rows="4" cols="40" placeholder="Enter your message"></textarea>
+            <br><br>
+
+            <button type="submit">Submit</button>
+
+        </form>
+
+
+        <!-- Inline Calculator -->
+        <div class="calculator">
+
+            <h2>Simple Calculator</h2>
+
+            <p>Enter two numbers to calculate their sum.</p>
+
+            <form oninput="result.value = Number(num1.value) + Number(num2.value)">
+
+                <label>First Number:</label><br>
+                <input type="number" name="num1" id="num1" value="0">
+                <br>
+
+                <label>Second Number:</label><br>
+                <input type="number" name="num2" id="num2" value="0">
+                <br><br>
+
+                <label>Sum:</label>
+                <output name="result" for="num1 num2">0</output>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- Footer Section -->
+    <div class="footer">
+
+        <p>Contact Information</p>
+        <p>Email: contact@example.com</p>
+        <p>&copy; 2026 Contact Us. All Rights Reserved.</p>
+
+    </div>
+
+</body>
+</html>
