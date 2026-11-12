@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Visit Terengganu | Discover Paradise</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        #hero {
+            text-align: center;
+        }
+
+        .highlight {
+            color: #d4a373;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header id="hero">
+        <h1>VISIT TERENGGANU</h1>
+        <p>Discover Paradise on the East Coast of Malaysia</p>
+        <a href="#destinations" class="explore-btn">
+            Explore Destinations
+        </a>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#video">Experience</a></li>
+            <li><a href="#trip">Book a Trip</a></li>
+        </ul>
+    </nav>
+
+    <!-- Introduction Section -->
+    <section id="intro">
+        <h2>Welcome to Terengganu</h2>
+        <p>
+            Experience the beauty of Terengganu, a Malaysian
+            destination famous for its beautiful islands,
+            crystal-clear waters, rich culture and delicious
+            traditional food.
+        </p>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations">
+        <h2>Explore Our Destinations</h2>
+
+        <div class="destination-container">
+
+            <!-- Destination 1 -->
+            <article class="destination-card">
+                <h3>Redang Island</h3>
+                <p>
+                    Enjoy crystal-clear waters, white sandy beaches
+                    and exciting snorkeling adventures.
+                </p>
+                <p class="price">
+                    <span class="old-price">RM 399</span>
+                    <span class="new-price">RM 299</span>
+                </p>
+            </article>
+
+            <!-- Destination 2 -->
+            <article class="destination-card">
+                <h3>Perhentian Island</h3>
+                <p>
+                    Discover beautiful coral reefs, tropical
+                    marine life and peaceful island scenery.
+                </p>
+                <p class="price">
+                    <span class="old-price">RM 450</span>
+                    <span class="new-price">RM 350</span>
+                </p>
+            </article>
+
+            <!-- Destination 3 -->
+            <article class="destination-card">
+                <h3>Kuala Terengganu</h3>
+                <p>
+                    Explore local heritage, traditional markets,
+                    beautiful architecture and local cuisine.
+                </p>
+                <p class="price">
+                    <span class="old-price">RM 250</span>
+                    <span class="new-price">RM 180</span>
+                </p>
+            </article>
+
+        </div>
+
+        <!-- Trip Availability Meter -->
+        <div class="availability">
+            <h3>Trip Availability</h3>
+            <p>28 out of 40 seats have been booked!</p>
+
+            <meter min="0" max="40" value="28">
+                28 out of 40
+            </meter>
+        </div>
+    </section>
+
+    <!-- Promotional Video Section -->
+    <section id="video">
+        <h2>Experience Terengganu</h2>
+
+        <figure>
+            <video controls width="700" height="400">
+                <source src="terengganu.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+
+            <figcaption>
+                Discover the beauty of marine life in Terengganu, where sea turtles swim freely in crystal-clear waters.          
+              </figcaption>
+        </figure>
+    </section>
+
+    <!-- Trip Interest Form Section -->
+    <section id="trip">
+        <h2>Plan Your Trip With Us</h2>
+
+        <form class="trip-form" onsubmit="showMessage(event)">
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name"
+                   placeholder="Enter your name" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email"
+                   placeholder="Enter your e-mail" required>
+
+            <p>Traveller Type:</p>
+
+            <label>
+                <input type="radio" name="traveller"
+                       value="student" required>
+                Student
+            </label>
+
+            <label>
+                <input type="radio" name="traveller"
+                       value="staff">
+                Staff
+            </label>
+
+            <label>
+                <input type="radio" name="traveller"
+                       value="public">
+                Public
+            </label>
+
+            <p>Interests:</p>
+
+            <label>
+                <input type="checkbox" name="interests"
+                       value="islands">
+                Islands
+            </label>
+
+            <label>
+                <input type="checkbox" name="interests"
+                       value="food">
+                Food
+            </label>
+
+            <label>
+                <input type="checkbox" name="interests"
+                       value="culture">
+                Culture
+            </label>
+
+            <label>
+                <input type="checkbox" name="interests"
+                       value="nature">
+                Nature
+            </label>
+
+            <button type="submit">Submit Interest</button>
+
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2026 Visit Terengganu. All Rights Reserved.</p>
+
+        <address>
+            Contact us:
+            <a href="mailto:tourism@example.com">
+                tourism@example.com
+            </a>
+        </address>
+    </footer>
+
+    <!-- Form Confirmation -->
+    <script>
+        function showMessage(event) {
+            event.preventDefault();
+            alert("Thank you! Your trip interest has been submitted.");
+            event.target.reset();
+        }
+    </script>
+
+</body>
+</html>

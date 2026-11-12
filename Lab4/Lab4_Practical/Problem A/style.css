@@ -1,0 +1,291 @@
+
+/* =================================
+   VISIT TERENGGANU - MAIN STYLING
+   ================================= */
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f2e9;
+    color: #243746;
+    line-height: 1.7;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #073b4c, #118ab2);
+    color: white;
+    padding: 90px 20px;
+}
+
+header h1 {
+    font-size: 45px;
+    letter-spacing: 5px;
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.explore-btn {
+    display: inline-block;
+    background-color: #e9c46a;
+    color: #073b4c;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Navigation */
+nav {
+    background-color: #073b4c;
+    padding: 16px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    display: block;
+    padding: 12px 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+nav a:link {
+    color: white;
+}
+
+nav a:visited {
+    color: #b8dce5;
+}
+
+nav a:hover {
+    color: white;
+    background-color: #118ab2;
+}
+
+nav a:active {
+    color: #ffcc00;
+}
+
+
+/* Main Sections */
+section {
+    max-width: 1100px;
+    margin: 35px auto;
+    padding: 35px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+section h2 {
+    color: #118ab2;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    text-decoration-color: #e9c46a;
+    text-underline-offset: 7px;
+}
+
+/* Destination Cards */
+.destination-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.destination-card {
+    background-color: #eaf5f7;
+    padding: 25px;
+    border-radius: 12px;
+    border-bottom: 5px solid #118ab2;
+    transition: 0.3s;
+}
+
+.destination-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+
+.destination-card h3 {
+    color: #073b4c;
+    margin-bottom: 12px;
+}
+
+.old-price {
+    color: #888;
+    text-decoration: line-through;
+    margin-right: 10px;
+}
+
+.new-price {
+    color: #e76f51;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.price {
+    margin-top: 15px;
+}
+
+/* Availability Meter */
+.availability {
+    margin-top: 35px;
+    padding: 20px;
+    background-color: #f5f2e9;
+    border-radius: 10px;
+}
+
+.availability h3 {
+    color: #073b4c;
+    margin-bottom: 10px;
+}
+
+meter {
+    width: 100%;
+    height: 25px;
+    margin-top: 10px;
+    accent-color: #118ab2;
+
+}
+
+/* Video */
+figure {
+    text-align: center;
+}
+
+video {
+    width: 100%;
+    max-width: 750px;
+    height: auto;
+    border-radius: 12px;
+}
+
+figcaption {
+    margin-top: 12px;
+    color: #777;
+    font-style: italic;
+}
+
+/* Trip Form */
+.trip-form {
+    background-color: #f1f8fa;
+    padding: 30px;
+    border: 2px solid #073b4c;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.trip-form input[type="text"],
+.trip-form input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+}
+
+.trip-form label {
+    cursor: pointer;
+}
+
+.trip-form input[type="radio"],
+.trip-form input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.trip-form button {
+    background-color: #118ab2;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.trip-form button:hover {
+    background-color: #073b4c;
+}
+
+/* Footer */
+footer {
+    background-color: #073b4c;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer a {
+    color: #e9c46a;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    nav ul {
+        gap: 18px;
+    }
+
+    section {
+        margin: 20px 12px;
+        padding: 22px;
+    }
+
+    .destination-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    header {
+        padding: 60px 15px;
+    }
+
+    header h1 {
+        font-size: 27px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section h2 {
+        font-size: 23px;
+    }
+}
