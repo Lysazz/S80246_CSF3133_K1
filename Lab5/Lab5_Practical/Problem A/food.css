@@ -1,0 +1,142 @@
+
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FBF7F0;
+    font-family: 'Open Sans', sans-serif;
+    color: #2C2C2C;
+}
+
+/* 1. Header with Background Image */
+header {
+    background-image: url("header-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    padding: 80px 20px;
+}
+
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    header p {
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.6;
+}
+}
+
+/* 2. Navigation Bar */
+nav {
+    background-color: #2C2C2C;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    float: left;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+nav a:hover {
+    background-color: #111;
+}
+
+nav a.active {
+    background-color: #E67E22;
+}
+
+/* 3. Main Content */
+main {
+    width: 90%;
+    max-width: 980px;
+    margin: 25px auto;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+/* 5. Styled Table */
+#food-table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+}
+
+#food-table th,
+#food-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+#food-table th {
+    background-color: #E67E22;
+    color: white;
+    text-transform: uppercase;
+}
+
+#food-table tr:nth-child(even) {
+    background-color: #FDEBD0;
+}
+
+#food-table tr:hover {
+    background-color: #F2F2F2;
+}
+
+/* Align Price Column to Right */
+#food-table td:last-child {
+    text-align: right;
+}
+
+/* 6. Footer */
+footer {
+    background-color: #EFE6D8;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    nav li {
+        float: none;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    main {
+        width: 94%;
+    }
+}
