@@ -1,0 +1,131 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f4f8;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #2c3e50;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #666;
+    font-size: 16px;
+}
+
+.quiz-container {
+    background: white;
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    color: #555;
+    font-weight: bold;
+}
+
+#timer {
+    color: #e74c3c;
+}
+
+#question {
+    font-size: 21px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+#answer-options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#answer-options button {
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #f8f9fa;
+    cursor: pointer;
+    text-align: left;
+    font-size: 16px;
+}
+
+#answer-options button:hover {
+    background: #dceeff;
+    border-color: #3498db;
+}
+
+#answer-options button.correct {
+    background: #d4edda;
+    border-color: #28a745;
+}
+
+#answer-options button.incorrect {
+    background: #f8d7da;
+    border-color: #dc3545;
+}
+
+#answer-options button:disabled {
+    cursor: not-allowed;
+}
+
+#feedback {
+    margin-top: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#next-btn {
+    display: block;
+    width: 100%;
+    padding: 13px;
+    margin-top: 20px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#next-btn:hover {
+    background: #2980b9;
+}
+
+#score-section {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
+
+#score-section h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+#score {
+    color: #3498db;
+    font-weight: bold;
+}
